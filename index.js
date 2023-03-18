@@ -18,7 +18,7 @@ function calculate(data) {
 document.getElementById('btn').addEventListener('click', function () {
     let input = document.getElementById('input').value;
     if (input == '') return alert('Input can not be empty !!');
-    input = '';
+    document.getElementById('output').innerHTML = '';
     calculate(input);
 });
 
